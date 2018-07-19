@@ -16,10 +16,6 @@ const appRoutes: Routes = [
         loadChildren: './main/ui/ui.module#UIModule'
     },
     {
-        path        : 'angular-material-elements',
-        loadChildren: './main/angular-material-elements/angular-material-elements.module#AngularMaterialElementsModule'
-    },
-    {
         path      : '**',
         redirectTo: 'apps/dashboards/analytics'
     }
