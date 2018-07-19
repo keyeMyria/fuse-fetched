@@ -294,68 +294,9 @@ export const navigation: FuseNavigation[] = [
                     }
                 ]
             },
-            {
-                id   : 'maintenance',
-                title: 'Maintenance',
-                type : 'item',
-                icon : 'build',
-                url  : '/pages/maintenance'
-            },
-            {
-                id      : 'pricing',
-                title   : 'Pricing',
-                type    : 'collapsable',
-                icon    : 'attach_money',
-                children: [
-                    {
-                        id   : 'style-1',
-                        title: 'Style 1',
-                        type : 'item',
-                        url  : '/pages/pricing/style-1'
-                    },
-                    {
-                        id   : 'style-2',
-                        title: 'Style 2',
-                        type : 'item',
-                        url  : '/pages/pricing/style-2'
-                    },
-                    {
-                        id   : 'style-3',
-                        title: 'Style 3',
-                        type : 'item',
-                        url  : '/pages/pricing/style-3'
-                    }
-                ]
-            },
-            {
-                id   : 'profile',
-                title: 'Profile',
-                type : 'item',
-                icon : 'person',
-                url  : '/pages/profile'
-            },
-            {
-                id   : 'search',
-                title: 'Search',
-                type : 'item',
-                icon : 'search',
-                url  : '/pages/search'
-            },
-            {
-                id   : 'faq',
-                title: 'Faq',
-                type : 'item',
-                icon : 'help',
-                url  : '/pages/faq'
-            },
-            {
-                id   : 'knowledge-base',
-                title: 'Knowledge Base',
-                type : 'item',
-                icon : 'import_contacts',
-                url  : '/pages/knowledge-base'
-            }
+
+
         ]
     },
-    
+
 ];

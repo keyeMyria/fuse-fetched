@@ -18,9 +18,6 @@ import { InvoiceCompactModule } from 'app/main/pages/invoices/compact/compact.mo
 import { MaintenanceModule } from 'app/main/pages/maintenance/maintenence.module';
 import { PricingModule } from 'app/main/pages/pricing/pricing.module';
 import { ProfileModule } from 'app/main/pages/profile/profile.module';
-import { SearchModule } from 'app/main/pages/search/search.module';
-import { FaqModule } from 'app/main/pages/faq/faq.module';
-import { KnowledgeBaseModule } from 'app/main/pages/knowledge-base/knowledge-base.module';
 
 @NgModule({
     imports: [
@@ -47,23 +44,7 @@ import { KnowledgeBaseModule } from 'app/main/pages/knowledge-base/knowledge-bas
         InvoiceModernModule,
         InvoiceCompactModule,
 
-        // Maintenance
-        MaintenanceModule,
 
-        // Pricing
-        PricingModule,
-
-        // Profile
-        ProfileModule,
-
-        // Search
-        SearchModule,
-
-        // Faq
-        FaqModule,
-
-        // Knowledge base
-        KnowledgeBaseModule
     ]
 })
 export class PagesModule
