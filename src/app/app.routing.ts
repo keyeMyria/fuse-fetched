@@ -6,14 +6,6 @@ const appRoutes: Routes = [
     {
         path        : 'apps',
         loadChildren: './main/apps/apps.module#AppsModule'
-    },
-    {
-        path        : 'pages',
-        loadChildren: './main/pages/pages.module#PagesModule'
-    },
-    {
-        path      : '**',
-        redirectTo: 'apps/dashboards/analytics'
     }
 ];
 

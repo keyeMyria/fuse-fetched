@@ -5,10 +5,6 @@ const routes: Routes = [
     {
         path        : 'dashboards/analytics',
         loadChildren: './dashboards/analytics/analytics.module#AnalyticsDashboardModule'
-    },
-    {
-        path        : 'chat',
-        loadChildren: './chat/chat.module#ChatModule'
     }
 
 ];
