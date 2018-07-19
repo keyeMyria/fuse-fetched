@@ -20,32 +20,8 @@ import { AppComponent } from 'app/app.component';
 import { AppStoreModule } from 'app/store/store.module';
 import { LayoutModule } from 'app/layout/layout.module';
 
-const appRoutes: Routes = [
-    {
-        path        : 'apps',
-        loadChildren: './main/apps/apps.module#AppsModule'
-    },
-    {
-        path        : 'pages',
-        loadChildren: './main/pages/pages.module#PagesModule'
-    },
-    {
-        path        : 'ui',
-        loadChildren: './main/ui/ui.module#UIModule'
-    },
-    {
-        path        : 'documentation',
-        loadChildren: './main/documentation/documentation.module#DocumentationModule'
-    },
-    {
-        path        : 'angular-material-elements',
-        loadChildren: './main/angular-material-elements/angular-material-elements.module#AngularMaterialElementsModule'
-    },
-    {
-        path      : '**',
-        redirectTo: 'apps/dashboards/analytics'
-    }
-];
+import { routing } from './app.routing';
+
 
 @NgModule({
     declarations: [
@@ -55,7 +31,7 @@ const appRoutes: Routes = [
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
-        RouterModule.forRoot(appRoutes),
+        routing,
 
         TranslateModule.forRoot(),
         InMemoryWebApiModule.forRoot(FakeDbService, {
