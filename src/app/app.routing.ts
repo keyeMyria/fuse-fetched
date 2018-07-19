@@ -12,10 +12,6 @@ const appRoutes: Routes = [
         loadChildren: './main/pages/pages.module#PagesModule'
     },
     {
-        path        : 'ui',
-        loadChildren: './main/ui/ui.module#UIModule'
-    },
-    {
         path      : '**',
         redirectTo: 'apps/dashboards/analytics'
     }
